@@ -1,0 +1,72 @@
+
+--- TOTAL_RECORDS ---
+
+ total_records
+         10000
+
+--- QUALITY_ISSUE_RATE ---
+
+ total_records  quality_issue_records  issue_rate_percent
+         10000                   2647               26.47
+
+--- ISSUE_CATEGORY_SUMMARY ---
+
+         final_issue_category  record_count
+       Specimen/test mismatch           627
+Missing physician information           522
+       Missing diagnosis text           447
+        Duplicate specimen ID           393
+               Delayed report           305
+      Missing client facility           199
+        Invalid date sequence           154
+
+--- TURNAROUND_TIME_BY_PRIORITY ---
+
+priority  avg_turnaround_time_hours  total_records
+ Routine                     112.56           7783
+  Urgent                      47.81           1727
+    STAT                      18.81            490
+
+--- CLIENT_FACILITY_QUALITY ---
+
+              client_facility  total_records  quality_issue_records  avg_quality_score  avg_tat_hours
+        Riverside Dermatology           1011                    274              93.40          97.57
+        Sterling Primary Care            960                    267              93.28          97.88
+         Summit Urology Group            974                    261              93.31          94.79
+  Prairie Diagnostic Partners            966                    249              93.76          98.19
+     Evergreen Women's Health            978                    249              93.60          96.47
+        Midwest Family Health            986                    243              93.61          98.04
+     Horizon Gastroenterology           1027                    240              94.31          98.20
+    Lakefront Oncology Clinic            967                    229              93.96          93.92
+     Northview Medical Center            968                    219              94.44          95.85
+                         None            209                    209              72.61          90.83
+Buffalo Grove Surgical Center            954                    207              94.79          98.09
+
+--- RECORDS_NEEDING_REVIEW ---
+
+   specimen_id patient_id_masked               client_facility     physician_name        specimen_type            test_type report_status  final_issue_category  quality_score
+SP-2026-003813         PT-2IY1UV         Midwest Family Health               None                Blood       Histopathology         Final Duplicate specimen ID             25
+SP-2026-003221         PT-BPZ5JV         Riverside Dermatology     Dr. Meera Shah            GI Biopsy      Hematopathology         Final Duplicate specimen ID             25
+SP-2026-001629         PT-G2CH2F         Midwest Family Health    Dr. Emily Stone Fine Needle Aspirate Immunohistochemistry         Final Duplicate specimen ID             25
+SP-2026-000257         PT-HUB2RT      Evergreen Women's Health               None             Cytology             Cytology         Final Duplicate specimen ID             45
+SP-2026-000578         PT-VVIAA2         Sterling Primary Care     Dr. Aisha Khan             Cytology    Molecular Testing         Final Duplicate specimen ID             45
+SP-2026-003868         PT-0OIQJ7         Midwest Family Health     Dr. Neha Patel   Breast Core Biopsy       Histopathology         Final Duplicate specimen ID             45
+SP-2026-003097         PT-ZRB9OP                          None  Dr. Omar Siddiqui        Tissue Biopsy       Histopathology         Final Duplicate specimen ID             45
+SP-2026-001436         PT-I89UV1   Prairie Diagnostic Partners               None Fine Needle Aspirate             Cytology         Final Duplicate specimen ID             45
+SP-2026-000692         PT-OYWM42      Evergreen Women's Health     Dr. Neha Patel           Skin Shave       Histopathology         Final Duplicate specimen ID             45
+SP-2026-006433         PT-ULOB77 Buffalo Grove Surgical Center Dr. William Harris           Skin Shave       Histopathology       Pending Duplicate specimen ID             45
+SP-2026-003638         PT-AYIX6X         Midwest Family Health               None          Bone Marrow      Hematopathology         Final Duplicate specimen ID             45
+SP-2026-003712         PT-I34UDY      Northview Medical Center               None Fine Needle Aspirate             Cytology         Final Duplicate specimen ID             45
+SP-2026-000752         PT-MFSWPY         Midwest Family Health  Dr. Omar Siddiqui             Cytology    Molecular Testing         Final Duplicate specimen ID             45
+SP-2026-005288         PT-UP6J3V      Northview Medical Center  Dr. Daniel Brooks          Bone Marrow      Hematopathology     In Review Duplicate specimen ID             45
+SP-2026-006684         PT-JVK2KY     Lakefront Oncology Clinic               None             Cytology             Cytology     In Review Duplicate specimen ID             45
+SP-2026-001381         PT-H4R0D3   Prairie Diagnostic Partners    Dr. Robert Chen   Breast Core Biopsy Immunohistochemistry     In Review Duplicate specimen ID             45
+SP-2026-002927         PT-LY6PSF         Sterling Primary Care    Dr. Emily Stone           Skin Shave       Histopathology         Final Duplicate specimen ID             45
+SP-2026-008045         PT-W7NSZA Buffalo Grove Surgical Center               None          Bone Marrow    Molecular Testing     In Review Duplicate specimen ID             45
+SP-2026-005551         PT-R2FJLL         Riverside Dermatology               None             Cytology             Cytology         Final Duplicate specimen ID             45
+SP-2026-007371         PT-9CQJE1         Riverside Dermatology               None Fine Needle Aspirate    Molecular Testing         Final Duplicate specimen ID             45
+SP-2026-004907         PT-OJ5TA6      Northview Medical Center    Dr. Priya Raman             Cytology             Cytology         Final Duplicate specimen ID             45
+SP-2026-005822         PT-NTWQVU      Horizon Gastroenterology  Dr. Omar Siddiqui       Urine Cytology             Cytology     In Review Duplicate specimen ID             45
+SP-2026-004692         PT-8NEIAE          Summit Urology Group     Dr. Aisha Khan           Skin Shave       Histopathology     In Review Duplicate specimen ID             45
+SP-2026-005429         PT-S9WHR9      Evergreen Women's Health               None       Urine Cytology    Molecular Testing         Final Duplicate specimen ID             45
+SP-2026-006655         PT-C5X98J      Northview Medical Center               None           Skin Shave       Histopathology         Final Duplicate specimen ID             45

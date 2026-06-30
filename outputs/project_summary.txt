@@ -1,0 +1,40 @@
+
+Clinical Diagnostics Data Quality Analysis Summary
+
+Project Overview:
+This project simulates a pathology laboratory workflow focused on specimen accessioning,
+diagnostic reporting accuracy, discrepancy tracking, turnaround time monitoring, and
+HIPAA-safe patient identifier handling.
+
+Dataset:
+- Total synthetic specimen records analyzed: 10000
+- Patient identifiers are masked and synthetic.
+- Data includes specimen type, test type, physician/client details, report status,
+  turnaround time, diagnosis text, and quality-control flags.
+
+Key Findings:
+- 2647 records were flagged with at least one data quality issue.
+- Overall issue rate was 26.47%.
+- Average turnaround time was 96.78 hours.
+- Average quality score was 93.4.
+- 2507 records were still Pending, On Hold, or In Review.
+- 393 records had duplicate specimen ID concerns.
+- 1216 records had missing physician, client, or diagnosis information.
+- 319 records were delayed beyond the 168-hour threshold.
+- 163 records had invalid date sequences.
+- 747 records had specimen/test mismatch issues.
+
+Operational Relevance:
+The analysis supports a clinical diagnostics workflow by identifying records that require
+manual review before final reporting. These checks reduce risk from duplicate accession IDs,
+missing provider information, delayed reports, incomplete diagnostic text, and specimen/test
+classification errors.
+
+Skills Demonstrated:
+- Healthcare data quality analysis
+- Specimen tracking workflow simulation
+- Reporting accuracy checks
+- SQL query development
+- Python data cleaning
+- Operational dashboard preparation
+- HIPAA-safe masked patient data handling
