@@ -1,42 +1,46 @@
-# Clinical Diagnostics Data Quality & Specimen Tracking Analysis
+# Clinical Diagnostics Data Quality & Specimen Tracking Dashboard
 
-This project generates synthetic pathology lab specimen records, runs quality checks, saves analysis outputs, and provides an optional Streamlit dashboard.
+## Project Overview
 
-## Project Root
+This project is an AI-assisted healthcare analytics and data quality system that simulates a pathology laboratory workflow for specimen accessioning, diagnostic reporting, discrepancy tracking, turnaround time monitoring, and manual-review prioritization.
 
-Use this folder in VS Code:
+The goal was to model how clinical diagnostics teams can identify operational and reporting risks before final report release. The project uses a fully synthetic dataset of 10,000 pathology specimen records. No real patient data, protected health information, or actual diagnostic records were used.
 
-`C:\Users\shrey\OneDrive`
+## Problem Statement
 
-## Files
+Clinical diagnostic laboratories process large volumes of specimen and reporting data. Even small data quality issues can create workflow delays or reporting risks. Common issues include duplicate specimen IDs, missing physician or client details, incomplete diagnosis fields, invalid date sequences, delayed reports, and specimen/test mismatches.
 
-- `generate_clinical_diagnostics_data.py`
-- `clinical_diagnostics_analysis.py`
-- `app.py`
-- `requirements.txt`
-- `RUN_INSTRUCTIONS.txt`
-- `data/`
-- `outputs/`
+This project addresses the problem by building a simulated data quality pipeline that flags high-risk records, summarizes operational metrics, and visualizes records requiring manual review.
 
-## How to Run
+## What I Built
 
-Follow the commands in `RUN_INSTRUCTIONS.txt`.
+I created an end-to-end analytics workflow that includes:
 
-## What the Project Does
+* AI-assisted synthetic pathology data generation
+* Masked patient identifiers for HIPAA-safe simulation
+* Python-based data cleaning and validation checks
+* SQL-based operational reporting
+* Quality scoring and issue categorization
+* Streamlit dashboard deployment
+* Visual analysis of reporting status, turnaround time, specimen volume, and flagged records
 
-- Generates synthetic pathology data with masked patient IDs.
-- Validates specimen and report quality rules.
-- Exports CSV outputs, a SQLite database, and chart images.
-- Displays the results in a Streamlit dashboard.
+## Key Results
 
-## Validation Rules
+* Total synthetic records analyzed: 10,000
+* Records flagged for quality issues: 2,647
+* Overall simulated issue rate: 26.47%
+* Average turnaround time: 96.78 hours
+* Reports Pending, On Hold, or In Review: 2,507
+* Duplicate specimen ID records: 393
+* Missing information records: 1,216
+* Specimen/test mismatches: 747
 
-- Duplicate specimen IDs
-- Missing physician/client/diagnosis values
-- Invalid date sequences
-- Delayed reports beyond 168 hours
-- Specimen/test mismatches
+## Live Dashboard
 
-## Notes
+View the deployed dashboard here:
 
-The Streamlit app reads from the local `data/` and `outputs/` folders inside this project root.
+https://clinical-diagnostics-quality-dashboard-3gtzpffp33dybrbpazp8fs.streamlit.app/
+
+## Tools Used
+
+Python, Pandas, SQLite, Plotly, Streamlit, Matplotlib, GitHub, Streamlit Cloud
