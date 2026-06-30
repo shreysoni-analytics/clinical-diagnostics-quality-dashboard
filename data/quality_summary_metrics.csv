@@ -1,0 +1,13 @@
+metric,value
+total_records,10000.0
+unique_specimen_ids,9801.0
+duplicate_specimen_records,393.0
+records_with_quality_issues,2647.0
+missing_physician_records,540.0
+missing_client_records,209.0
+missing_diagnosis_records,467.0
+invalid_date_records,163.0
+delayed_report_records,319.0
+specimen_test_mismatch_records,747.0
+average_turnaround_time_hours,96.78
+average_quality_score,93.4
